@@ -1,8 +1,8 @@
 .. Adding labels to the beginning of your lab is helpful for linking to the lab from other pages
-.. _Data_Resiliancy_1:
+.. _Data_Resiliency_1:
 
 -----------------
-Data Resiliancy
+Data Resiliency
 -----------------
 
 Session 9
@@ -103,22 +103,12 @@ https://portal.nutanix.com/page/documents/details/?targetId=Web-Console-Guide-Pr
 
 - Set in Prism upon VM creation, or edit after VM created (offline | online).
 
-**Anti-Affinity Rules (VM-to-VM)**
-
-- Restrict VMs from running on same host(s).
-
-  - Normally doesn’t but can if an HA event occurs.
-
-- Set in cli (not Prism).
-
-  - Requires VM Group
-  - VMs in same VM Group not running on same hosts.
 
 **Licensing**
 
-- (Anti-)Affinity Rules available with all licenses
+- Affinity Rules available with all licenses
 
-  - See HERE (Starter / Pro / Ultimate).
+
 
 
 
@@ -152,9 +142,9 @@ Anti-Affinity
 
 **Licensing**
 
-- (Anti-)Affinity Rules available with all licenses
+- Anti-Affinity Rules available with all licenses
 
-  - See HERE (Starter / Pro / Ultimate).
+
 
 
 

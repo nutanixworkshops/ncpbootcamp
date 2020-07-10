@@ -69,7 +69,6 @@ Source: https://www.nutanix.com/content/nutanix/en/products/hardware-platforms
 
 The Nutanix Enterprise Cloud Platform is also available on industry-leading OEM appliance platforms from HPE, Lenovo, Fujitsu, InSpur, Dell EMC and IBM.
 
-See the Hardware Compatibility List (HCL) on the Support Portal (Documentation section).
 
 **Third-Party Server Vendors**
 
@@ -81,6 +80,8 @@ The Nutanix Enterprise Cloud Platform is also available as a software option thr
 - Inspur Hardware
 - Intel Hardware
 - Klas Hardware
+
+See the Hardware Compatibility List (HCL) on the Support Portal (Documentation section).
 
 **Supported Architectures**
 
@@ -158,11 +159,14 @@ More AOS details can be found on nutanixbible.com
 
 A large number of AOS services are running inside the CVM.
 
-- Apache Zookeeper implements Zeus, which is the Nutanix library that all other components use to access the cluster configuration.
-- Medusa is a Nutanix abstraction layer that sits in front of the database that holds metadata. A modified form of Apache Cassandra distributes the database across all nodes in the cluster.
-- From the perspective of the hypervisor, Stargate is the main point of contact for the Nutanix cluster. 
-- In the Nutanix cluster, each node runs a Curator process that watches over the entire process.
+- Apache **Zookeeper** implements Zeus, which is the Nutanix library that all other components use to access the cluster configuration.
+- **Medusa** is a Nutanix abstraction layer that sits in front of the database that holds metadata. 
+  - A modified form of Apache **Cassandra** distributes the metadata database across all nodes in the cluster.
+- From the perspective of the hypervisor, **Stargate** is the main point of contact for the Nutanix cluster. 
+- In the Nutanix cluster, each node runs a **Curator** process that watches over the entire process.
+  - Curator is responsible for managing and distributing tasks throughout the cluster, including disk balancing, proactive scrubbing, and many more
 
+  
 
 
 
@@ -180,7 +184,7 @@ For best performance, algorithms make sure the most frequently used data is avai
 
 -----------------------------------------------------
 
-Redundancy Factor (RF)
+Replication Factor (RF)
 ++++++++++++++++++++++
 
 Either RF2 or RF3
@@ -189,6 +193,7 @@ Either RF2 or RF3
 
 
 Why no data is lost upon node failure:
+
 - Write I/O’s directly written to SSD
 - Write I/O’s replicated to other nodes (depends on RF)
 - Memory only used for Read I/O’s 
@@ -277,46 +282,62 @@ Nutanix Enterprise Cloud delivers a consistent, high-performance and seamless ex
 
 
 
------------------------------------------------------
+.. -----------------------------------------------------
 
-Nutanix Product Portfolio
-++++++++++++++++++++++++++++++
+.. Nutanix Product Portfolio
+.. ++++++++++++++++++++++++++++++
 
-A journey from Core to Essentials to Enterprise
+.. A journey from Core to Essentials to Enterprise
 
-.. figure:: images/NutanixProductPortfolio.png
+.. .. figure:: images/NutanixProductPortfolio.png
 
-Products & Platforms
-Over the years the Nutanix Platform capabilities have grown substantially, shown here as a journey from Core to Essentials to Enterprise.  Refer to the Nutanix website for the latest portfolio and offerings. 
+.. Products & Platforms
+.. Over the years the Nutanix Platform capabilities have grown substantially, shown here as a journey from Core to Essentials to Enterprise.  Refer to the Nutanix website for the latest portfolio and offerings. 
 
-- Datacenter Modernization (Core): Core includes the foundational Nutanix products facilitating the migration from complex 3-tier infrastructure to a simple HCI platform. AOS provides all of the core services (storage, upgrades, replication, etc.), Prism provides the control plane and management console and AHV provides a free virtualization platform (NOTE: you can also use ESXi, Hyper-V and XenServer). Core capabilities include: Core Platforms (HCI), Storage Services, Virtualization, Centralized Management & Operations, Upgrades, and Replication / DR
-- Enabling Private Cloud (Essentials): Essentials is focused on providing the capabilities to enable Core infrastructure to be consumed like a private cloud. Flow provides network segmentation and security, Files provides file services and Calm provides self-service, quotas and orchestration capabilities. Essentials capabilities include: Advanced Analytics & Anomaly Detection, Automation & Orchestration, Self-service Portal (SSP) and Quotas, Micro-segmentation, and File Services.
-- Enabling Hybrid Cloud (Enterprise): Enterprise is focused on providing the ability to migrate workloads between clouds and cloud services. This includes features like Beam which is focused on cost governance and compliance across cloud and on-premise deployments as well as other cloud services like Frame (DaaS) and Xi Leap (DRaaS).  Enterprise capabilities include: Policy Driven DR / Run-book Automation, DRaaS, Hybrid Cloud Cost Governance & Compliance, Desktops As-A-Service (DaaS), Database As-A-Service (RDS), Kubernetes / Docker Services, Object Storage, Block Services
+.. - Datacenter Modernization (Core): Core includes the foundational Nutanix products facilitating the migration from complex 3-tier infrastructure to a simple HCI platform. AOS provides all of the core services (storage, upgrades, replication, etc.), Prism provides the control plane and management console and AHV provides a free virtualization platform (NOTE: you can also use ESXi, Hyper-V and XenServer). Core capabilities include: Core Platforms (HCI), Storage Services, Virtualization, Centralized Management & Operations, Upgrades, and Replication / DR
+.. - Enabling Private Cloud (Essentials): Essentials is focused on providing the capabilities to enable Core infrastructure to be consumed like a private cloud. Flow provides network segmentation and security, Files provides file services and Calm provides self-service, quotas and orchestration capabilities. Essentials capabilities include: Advanced Analytics & Anomaly Detection, Automation & Orchestration, Self-service Portal (SSP) and Quotas, Micro-segmentation, and File Services.
+.. - Enabling Hybrid Cloud (Enterprise): Enterprise is focused on providing the ability to migrate workloads between clouds and cloud services. This includes features like Beam which is focused on cost governance and compliance across cloud and on-premise deployments as well as other cloud services like Frame (DaaS) and Xi Leap (DRaaS).  Enterprise capabilities include: Policy Driven DR / Run-book Automation, DRaaS, Hybrid Cloud Cost Governance & Compliance, Desktops As-A-Service (DaaS), Database As-A-Service (RDS), Kubernetes / Docker Services, Object Storage, Block Services
 
-**AHV:** Native virtualization that eliminates expensive hypervisor lock-in.
-**Prism:** Simplified infrastructure management with one-click operations.
-**Volumes:** A native scale-out block storage solution.
-**Calm:** Comprehensive, app-centric lifecycle management and cloud orchestration.
-**Prism Pro:** Predictive analytics for critical planning, performance, and operational insights—powered by advanced machine learning.
-**Flow:** Advanced network automation and app-centric network security.
-**Mine Secondary StorageFiles:** Simple, scalable, and reliable file storage for your enterprise cloud.
-**Xi Beam:** Multicloud optimization service reduces costs and enhances cloud security compliance.
-**Move:** Easy application migration to the cloud of your choice.
-**Xi Leap:** Natively integrated, cloud-based disaster recovery.
-**Objects:** Scalable S3-compatible object storage for the multi-cloud era.
-**X-ray:** Real-world, scenario-driven HCI benchmarking.
-**Xi IoT:** Edge platform for delivering secure, actionable real-time analysis for IoT use cases.
-**Xi Frame:** Cloud-based desktop-as-a-service runs any application in any browser.
-**Karbon:** Simplified provisioning, operations, and lifecycle management for Kubernetes.
-**Era:** Elegant and efficient one-click operations that simplify database administration.
+.. **AHV:** Native virtualization that eliminates expensive hypervisor lock-in.
 
------------------------------------------------------
+.. **Prism:** Simplified infrastructure management with one-click operations.
 
-What’s in a Name?
-++++++++++++++++++++++
+.. **Volumes:** A native scale-out block storage solution.
+
+.. **Calm:** Comprehensive, app-centric lifecycle management and cloud orchestration.
+
+.. **Prism Pro:** Predictive analytics for critical planning, performance, and operational insights—powered by advanced machine learning.
+
+.. **Flow:** Advanced network automation and app-centric network security.
+
+.. **Mine Secondary StorageFiles:** Simple, scalable, and reliable file storage for your enterprise cloud.
+
+.. **Xi Beam:** Multicloud optimization service reduces costs and enhances cloud security compliance.
+
+.. **Move:** Easy application migration to the cloud of your choice.
+
+.. **Xi Leap:** Natively integrated, cloud-based disaster recovery.
+
+.. **Objects:** Scalable S3-compatible object storage for the multi-cloud era.
+
+.. **X-ray:** Real-world, scenario-driven HCI benchmarking.
+
+.. **Xi IoT:** Edge platform for delivering secure, actionable real-time analysis for IoT use cases.
+
+.. **Xi Frame:** Cloud-based desktop-as-a-service runs any application in any browser.
+
+.. **Karbon:** Simplified provisioning, operations, and lifecycle management for Kubernetes.
+
+.. **Era:** Elegant and efficient one-click operations that simplify database administration.
 
 
-.. figure:: images/WhatsinaName.png
+.. -----------------------------------------------------
+
+..  What’s in a Name?
+.. ++++++++++++++++++++++
+
+
+.. .. figure:: images/WhatsinaName.png
 
 
 
