@@ -11,38 +11,6 @@ Session 4
 
 -----------------------------------------------------
 
-Network Configuration
-++++++++++++++++++++++++++++++++
-
-.. figure:: images/networkconfiguration.png
-
-Eth2: Network segmentation is designed to separate management traffic from backplane (storage and CVM) traffic 
-
-Separates storage traffic from routable management traffic for security purposes
-
-Separate virtual networks are created for each traffic type
-
-
------------------------------------------------------
-
-
-
-VM Network: Enabling IPAM
-++++++++++++++++++++++++++++++++
-
-.. figure:: images/EnablingIPAM.png
-
-
-Enabling IPAM on a User VM Network.
-
-During the VM Network creation process, if you decide to enable IPAM, you will be prompted to provide an IP Pool start and end address
-
-Provide the required values and click Submit
-
-
-
------------------------------------------------------
-
 Prism Network Dashboard
 ++++++++++++++++++++++++++++++++
 
@@ -179,7 +147,7 @@ Load Balancing Modes
 
 .. figure:: images/LoadBalancingModes.png
 
-**Active-Passive**
+**Active-Backup**
 
 - Provides only fault tolerance
 - No special hardware required (physical switches available for redundancy)
@@ -212,45 +180,6 @@ AHV vSwitch Management: Open Virtual Switch
 
 
 
------------------------------------------------------
-
-
-References
-++++++++++++++++++++++
-
-
-.. figure:: images/NetworkManagement.png
-
-`Network Management <https://portal.nutanix.com/page/documents/details/?targetId=Web-Console-Guide-Prism-v5_15:wc-network-management-wc-c.html>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
------------------------------------------------------
-
-.. figure:: images/HostNetworkManagement.png
-
-
-
-`Host Network Management <https://portal.nutanix.com/page/documents/details/?targetId=AHV-Admin-Guide-v5_15:ahv-acr-nw-mgmt-c.html>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
------------------------------------------------------
-
-.. figure:: images/AHVNetworkingBPG.png
-
-
-
-`AHV Networking Best Practices Guide <https://www.nutanix.com/go/ahv-networking>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
------------------------------------------------------
-
-.. figure:: images/AHVBestPracticesGuide.png
-
-
-`AHV Best Practices Guide <https://www.nutanix.com/go/ahv-best-practices-guide>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 
 -----------------------------------------------------
 
@@ -268,8 +197,84 @@ References
 Questions
 ++++++++++++++++++++++
 
-This is a link to the Questions : :doc:`Questions`
+:doc:`Questions`
+
+
+-----------------------------------------------------
+
+Bonus Material
+++++++++++++++++++++++++++++++++
+
+
+
+-----------------------------------------------------
+
+Network Configuration
+!!!!!!!!!!!!!!!!!!!!!
+
+.. figure:: images/networkconfiguration.png
+
+Eth2: Network segmentation is designed to separate management traffic from backplane (storage and CVM) traffic 
+
+Separates storage traffic from routable management traffic for security purposes
+
+Separate virtual networks are created for each traffic type
+
+
+
+-----------------------------------------------------
+
+
+
+VM Network: Enabling IPAM
+!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.. figure:: images/EnablingIPAM.png
+
+
+Enabling IPAM on a User VM Network.
+
+During the VM Network creation process, if you decide to enable IPAM, you will be prompted to provide an IP Pool start and end address
+
+Provide the required values and click Submit
 
 
 
 
+
+
+
+-----------------------------------------------------
+
+
+References
+!!!!!!!!!!
+
+
+.. figure:: images/NetworkManagement.png
+
+`Network Management <https://portal.nutanix.com/page/documents/details/?targetId=Web-Console-Guide-Prism-v5_15:wc-network-management-wc-c.html>`_
+
+
+-----------------------------------------------------
+
+.. figure:: images/HostNetworkManagement.png
+
+
+
+`Host Network Management <https://portal.nutanix.com/page/documents/details/?targetId=AHV-Admin-Guide-v5_15:ahv-acr-nw-mgmt-c.html>`_
+
+-----------------------------------------------------
+
+.. figure:: images/AHVNetworkingBPG.png
+
+
+
+`AHV Networking Best Practices Guide <https://www.nutanix.com/go/ahv-networking>`_
+
+-----------------------------------------------------
+
+.. figure:: images/AHVBestPracticesGuide.png
+
+
+`AHV Best Practices Guide <https://www.nutanix.com/go/ahv-best-practices-guide>`_

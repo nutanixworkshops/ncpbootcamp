@@ -165,46 +165,6 @@ Asynchronous Data Replication
 
 -----------------------------------------------------
 
-Asynchronous Replication: Migrate 
-++++++++++++++++++++++++++++++++++
-
-**Option available on local site**
-
-.. figure:: images/ASynchronousReplicationMigrate.png
-
-**Migrate is used when the source Protection Domain is still available.**
-
-- Creates and replicates a snapshot of the PD
-- Powers off VMs on the local site
-- Creates and replicates another snapshot of the PD
-- Unregisters all VMs and volume groups and removes their associated files
-- Marks local site PD as inactive
-- stores all VM and VGs from last snapshot and registers with new UUIDs at remote site
-- Marks remote site PD as active
-- VMs will NOT be powered on automatically!
-
-
-
-
------------------------------------------------------
-
-Asynchronous Replication: Activate 
-++++++++++++++++++++++++++++++++++
-
-**Option available on remote site**
-
-.. figure:: images/ASynchronousReplicationActivate.png
-
-
-**Activate is used in a failure situation**
-
-- Last made and replicated snapshots will be used to restore VMs
-- Registers the VMs and VGs on the recovery site
-- Marks the failover site PD as active
-
-
------------------------------------------------------
-
 Consistency Groups
 ++++++++++++++++++++++++++++++++++
 
@@ -270,10 +230,66 @@ Protection Domain Considerations
 
 
 
+
+-----------------------------------------------------
+
+Questions
+++++++++++++++++++++++
+
+This is a link to the Questions : :doc:`Questions`
+
+
+-----------------------------------------------------
+
+Bonus Material
+++++++++++++++++++++++
+
+-----------------------------------------------------
+
+Asynchronous Replication: Migrate 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+**Option available on local site**
+
+.. figure:: images/ASynchronousReplicationMigrate.png
+
+**Migrate is used when the source Protection Domain is still available.**
+
+- Creates and replicates a snapshot of the PD
+- Powers off VMs on the local site
+- Creates and replicates another snapshot of the PD
+- Unregisters all VMs and volume groups and removes their associated files
+- Marks local site PD as inactive
+- stores all VM and VGs from last snapshot and registers with new UUIDs at remote site
+- Marks remote site PD as active
+- VMs will NOT be powered on automatically!
+
+
+
+
+-----------------------------------------------------
+
+Asynchronous Replication: Activate 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+**Option available on remote site**
+
+.. figure:: images/ASynchronousReplicationActivate.png
+
+
+**Activate is used in a failure situation**
+
+- Last made and replicated snapshots will be used to restore VMs
+- Registers the VMs and VGs on the recovery site
+- Marks the failover site PD as active
+
+
+
+
 -----------------------------------------------------
 
 Remote & Branch Office (ROBO) Solution
-++++++++++++++++++++++++++++++++++++++
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 .. figure:: images/ROBO.png
 
@@ -313,7 +329,7 @@ A self-healing Nutanix three-node cluster also obviates needless trips to remote
 -----------------------------------------------------
 
 NearSync
-++++++++++++++++++++++++++++++++++
+!!!!!!!!
 
 **Recovery Point Objective: 1 minute**
 
@@ -338,7 +354,7 @@ To configure NearSync, in the *Repeat every ## minutes* enter a desired number b
 -----------------------------------------------------
 
 Cloud Connect
-++++++++++++++++++++++++++++++++++
+!!!!!!!!!!!!!
 
 **Remote Site either physical cluster or Cloud**
 
@@ -354,38 +370,36 @@ The Nutanix Cloud Connect feature enables you to configure Amazon Web Services (
 
 
 
+
+
 -----------------------------------------------------
 
 References
-+++++++++++++++++++++++++
+!!!!!!!!!!
 
 
 
 .. figure:: images/DataProtection.png
 
 `Data Protection <https://portal.nutanix.com/page/documents/solutions/details/?targetId=BP-2005_Data_Protection:BP-2005_Data_Protection>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
 .. figure:: images/Failing.png
 
 `Failing From one Site to Another <https://portal.nutanix.com/page/documents/details/?targetId=Advanced-Admin-AOS-v5_15:sto-site-failover-t.html>`_
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
 .. figure:: images/DataProtectionandDisasterRecovery.png
 
 `Data Protection and Disaster Recovery <https://www.nutanix.com/go/enterprise-cloud-data-protection-on-nutanix>`_
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
 .. figure:: images/DefinitiveGuidetoDataProtectionandDisasterRecovery.png
 
 `Definitive Guide to Data Protection and Disaster Recovery <https://www.nutanix.com/go/the-definitive-guide-to-data-protection-and-disaster-recovery-on-enterprise-clouds>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 -----------------------------------------------------
@@ -393,7 +407,6 @@ References
 .. figure:: images/RedundancyFactorvsReplicationFactor.png
 
 `Redundancy Factor vs. Replication Factor <https://www.youtube.com/watch?v=tVPhl52thDY>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 -----------------------------------------------------
@@ -401,15 +414,4 @@ References
 .. figure:: images/DataProtectionforAHV.png
 
 `Data Protection for AHV-Based VMs <https://www.nutanix.com/go/vm-data-protection-ahv>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
-
------------------------------------------------------
-
-Questions
-++++++++++++++++++++++
-
-This is a link to the Questions : :doc:`Questions`
-
 

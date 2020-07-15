@@ -12,4 +12,3 @@ Answer 7
 
 Back to the Question: :ref:`DSF_question_7`
 
-Next Question: :ref:`DSF_question_8`

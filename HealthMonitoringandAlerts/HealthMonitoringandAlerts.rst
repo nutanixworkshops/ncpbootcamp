@@ -103,7 +103,14 @@ Create Metric and Entity charts
 
 
 
+-----------------------------------------------------
 
+
+
+Questions
+++++++++++++++++++++++
+
+This is a link to the Questions : :doc:`Questions`
 
 
 -----------------------------------------------------
@@ -116,7 +123,6 @@ References
 .. figure:: images/healthmonitoring.png
 
 `Health Monitoring <https://portal.nutanix.com/page/documents/details/?targetId=Prism-Central-Guide-Prism-v5_17:mul-alerts-management-pc-c.html>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
@@ -125,13 +131,4 @@ References
 .. figure:: images/EventMonitoring.png
 
 `Alert and Event Monitoring <https://portal.nutanix.com/page/documents/details/?targetId=Web-Console-Guide-Prism-v5_17:wc-health-management-wc-c.html>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
------------------------------------------------------
-
-
-
-Questions
-++++++++++++++++++++++
-
-This is a link to the Questions : :doc:`Questions`

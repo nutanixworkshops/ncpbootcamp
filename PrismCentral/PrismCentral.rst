@@ -58,27 +58,6 @@ SSL port 9440 needs to be open in both directions between the Prism Central VM a
 
 -----------------------------------------------------
 
-Cluster Management: Prism
-++++++++++++++++++++++++++++++++
-
-
-.. figure:: images/Prism.png
-
-
-
------------------------------------------------------
-
-Prism Pro Features
-++++++++++++++++++++++++++++++++++++++
-
-**Management of Registered Clusters**
-
-.. figure:: images/PrismProFeatures.png
-
-
-
------------------------------------------------------
-
 (Prism) Self-Service
 ++++++++++++++++++++++++++++++++++++++
 
@@ -111,39 +90,64 @@ A Prism Central administrator can also perform any of theses tasks, but they are
 
 
 
+
+
+-----------------------------------------------------
+
+Questions
+++++++++++++++++++++++
+
+This is a link to the Questions : :doc:`Questions`
+
+
+-----------------------------------------------------
+
+Bonus Material
+++++++++++++++++++++++
+
+
+
+-----------------------------------------------------
+
+Cluster Management: Prism
+!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+.. figure:: images/Prism.png
+
+
+
+-----------------------------------------------------
+
+Prism Pro Features
+!!!!!!!!!!!!!!!!!!
+
+**Management of Registered Clusters**
+
+.. figure:: images/PrismProFeatures.png
+
+
+
+
 -----------------------------------------------------
 
 References
-------------
+!!!!!!!!!!!
 
 
 .. figure:: images/PrismCentral.png
 
 `Prism Central <https://portal.nutanix.com/page/documents/details/?targetId=Prism-Central-Guide-Prism-v5_15:Prism-Central-Guide-Prism-v5_15>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
 .. figure:: images/PrismPrismPrism.png
 
 `Prism Element - Prism Central - Prism Pro <https://www.youtube.com/watch?v=tGzcUL6RN6s&feature=youtu.be>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
 .. figure:: images/PrismPro.png
 
 `Prism Pro Tech Note <https://www.nutanix.com/go/managing-enterprise-infrastructure-with-prism>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
-
-
------------------------------------------------------
-
-Questions
-------------
-
-This is a link to the Questions : :doc:`Questions`
-
 
