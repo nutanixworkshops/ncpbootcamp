@@ -13,5 +13,4 @@ Answer 7
 
 Back to the Question: :ref:`NC_question_7`
 
-Next Question: :ref:`NC_question_8`
 
