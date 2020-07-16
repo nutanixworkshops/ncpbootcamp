@@ -21,13 +21,16 @@ Prism Network Dashboard
 
 
 - Two different ways to provide VM connectivity: managed and unmanaged networks
+
   - With *unmanaged networks*, VMs get direct connection to their VLAN of choice
   - With *managed networks*, AHV (Acropolis master) can perform IP address management (IPAM) for VMs, handing out IP addresses via configurable DHCP pools
   
 **While a physical server connects to a physical network, a VM connects to a virtual network.**
 
 - In the case of AHV, it supports unmanaged and managed virtual networks.
+
   - An unmanaged network is simply a VLAN.
+  
 - A managed network is a VLAN plus IPAM.
 
   - IPAM stands for IP address management.
@@ -37,7 +40,7 @@ Prism Network Dashboard
 - You can create a virtual network from the Prism web console, nCLI, or the Nutanix REST API.
 - Tech Topx Video walks through AHV networking concepts, including both CLI and Prism examples:  https://youtube/pxQGCXNoD9U
 
-*IPAM*
+**IPAM**
 
 - CVM administrative L3 process to track device IP addresses
 - Creates associations between interface’s MAC address and IP addresses
@@ -180,18 +183,6 @@ AHV vSwitch Management: Open Virtual Switch
 
 
 
-
------------------------------------------------------
-
-
-
-.. figure:: images/TechTopX.png
-
-**nu.school Tech TopX Networking Series**
-
-
-
-
 -----------------------------------------------------
 
 Questions
@@ -278,3 +269,12 @@ References
 
 
 `AHV Best Practices Guide <https://www.nutanix.com/go/ahv-best-practices-guide>`_
+
+
+-----------------------------------------------------
+
+
+.. figure:: images/TechTopX.png
+
+**nu.school Tech TopX Networking Series**
+
